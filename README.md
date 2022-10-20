@@ -1,6 +1,13 @@
 # Design System
 ## O que é?
-- Design System é um conjunto de componentes e tokens padronizados que podem ser usados em qualquer aplicação de uma empresa, desde textos, cores e botões.
+- Design System é um conjunto de componentes e tokens padronizados que podem ser usados em qualquer aplicação de uma empresa, desde textos, cores e botões. É um ecossistema de bibliotecas instaláveis, com componentes programados e padrões semânticos de design, que reúne padrões de comportamentos.
+
+## Por que criar um design system?
+- Para uma empresa que conta com várias aplicações, é de extrema importância que se tenha uma padronização entre essas aplicações, como paleta de cores, inputs, botões, etc.
+- A ideia de criar um design system é facilitar o trabalho dos designers e desenvolvedores, além de criar uma identidade que pode ser facilmente reconhecida pelos usuários.
+
+## IMPORTANTE
+- "É importante saber que um design system não é um projeto, e sim um produto usado por outros produtos." Anne Mendes.
 
 ## Tokens  do design system
 - [x] Color
@@ -21,3 +28,6 @@
 - [] Checkbox
 - [] Avatar
 - [] MultiStep
+
+## Tecnologias novas aprendidas no projeto
+- Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
