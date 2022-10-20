@@ -29,5 +29,10 @@
 - [] Avatar
 - [] MultiStep
 
+## Mono Repo
+- Agrupar projetos que são dependentes entre si.
+- Possibilidade de trabalhar em vários projetos diferentes dentro da mesma estrutura e ao mesmo tempo.
+- Dependências geradas de forma global.
+
 ## Tecnologias novas aprendidas no projeto
 - Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
