@@ -34,5 +34,10 @@
 - Possibilidade de trabalhar em vários projetos diferentes dentro da mesma estrutura e ao mesmo tempo.
 - Dependências geradas de forma global.
 
+## Storybook
+### Instalação no projeto
+- ```npx sb init --builder @storybook/builder-vite --type react --use-npm```
+
 ## Tecnologias novas aprendidas no projeto
 - Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
+- Storybook
