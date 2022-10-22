@@ -50,5 +50,6 @@
 
 ## Bibliotecas novas aprendidas no projeto
 - Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
-- Storybook
-- Polished
+- Storybook.
+- Polished.
+- TurboRepo: salva em cache a build dos projetos, e consegue executar os scrips de todos os projetos em paralelo.
