@@ -48,6 +48,7 @@
 ### Instalação no projeto
 - ```npx sb init --builder @storybook/builder-vite --type react --use-npm```
 
-## Tecnologias novas aprendidas no projeto
+## Bibliotecas novas aprendidas no projeto
 - Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
 - Storybook
+- Polished
