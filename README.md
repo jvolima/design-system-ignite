@@ -35,6 +35,16 @@
 - Dependências geradas de forma global.
 
 ## Storybook
+### O que é
+- Ferramenta que tem como objetivo servir de ambiente isolado para criar componentes.
+
+### Por que usar?
+- O time pode atuar simultaneamente no desenvolvimento dos componentes.
+- Reutilização de código.
+- Permite testar o componente sem ter que colocar ele na aplicação.
+- Promove uma melhor documentação.
+- Melhora a qualidade do código.
+
 ### Instalação no projeto
 - ```npx sb init --builder @storybook/builder-vite --type react --use-npm```
 
