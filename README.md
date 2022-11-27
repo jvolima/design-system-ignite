@@ -19,14 +19,14 @@
 - [x] Space
 
 ## Componentes do design system
-- [] Text
-- [] Heading
-- [] Box
-- [] Button
+- [x] Text
+- [x] Heading
+- [x] Box
+- [x] Button
 - [] TextInput
 - [] TextArea
 - [] Checkbox
-- [] Avatar
+- [x] Avatar
 - [] MultiStep
 
 ## Mono Repo
