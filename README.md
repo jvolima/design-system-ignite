@@ -23,11 +23,11 @@
 - [x] Heading
 - [x] Box
 - [x] Button
-- [] TextInput
-- [] TextArea
-- [] Checkbox
+- [x] TextInput
+- [x] TextArea
+- [x] Checkbox
 - [x] Avatar
-- [] MultiStep
+- [x] MultiStep
 
 ## Mono Repo
 - Agrupar projetos que são dependentes entre si.
