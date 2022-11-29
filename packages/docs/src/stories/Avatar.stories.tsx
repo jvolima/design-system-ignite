@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/jvolima.png',
     alt: 'João Vitor',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
