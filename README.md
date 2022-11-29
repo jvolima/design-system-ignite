@@ -53,3 +53,4 @@
 - Storybook.
 - Polished.
 - TurboRepo: salva em cache a build dos projetos, e consegue executar os scrips de todos os projetos em paralelo.
+- Addon-a11y: testa a acessibilidade dos componentes no storybook
