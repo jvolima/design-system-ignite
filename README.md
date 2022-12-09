@@ -100,3 +100,7 @@ jobs:
 - Addon-a11y: testa a acessibilidade dos componentes no storybook
 - Storybook-deployer: biblioteca para fazer deploy do storybook (https://github.com/storybookjs/storybook-deployer)
 - Changesets: versionamento do design-system (https://github.com/changesets/changesets/blob/main/packages/cli/README.md)
+
+## Aprendizados do projeto
+- Design System
+- Publicar pacotes no npm
