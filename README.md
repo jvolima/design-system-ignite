@@ -48,9 +48,55 @@
 ### Instalação no projeto
 - ```npx sb init --builder @storybook/builder-vite --type react --use-npm```
 
+### Como fazer deploy para o github
+- Criar na raiz do projeto uma pasta .github com uma pasta workflows dentro, e nessa pasta criar um arquivo deploy-docs.yml com as seguintes informações:
+```
+name: Deploy docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Deploy storybook
+        working-directory: ./packages/docs
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }} 
+```
+- Após isso inserir o seguinte código no arquivo main.js da pasta .storybook
+```
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/nome-do-repo/'
+    }
+
+    return config
+  }
+```
+- Por último fazer uma pequena configuração no repositório do github. Clique em settings, vá para a seção pages, na subseção Build and Deployment selecione a branch gh-pages, coloque a source como sendo Deploy from a branch e salve.
+
 ## Bibliotecas novas aprendidas no projeto
 - Tsup: ferramenta muito performática usada para conversão de código typescript para javascript.
 - Storybook.
 - Polished.
 - TurboRepo: salva em cache a build dos projetos, e consegue executar os scrips de todos os projetos em paralelo.
 - Addon-a11y: testa a acessibilidade dos componentes no storybook
+- Storybook-deployer: biblioteca para fazer deploy do storybook (https://github.com/storybookjs/storybook-deployer)
+- Changesets: versionamento do design-system (https://github.com/changesets/changesets/blob/main/packages/cli/README.md)
