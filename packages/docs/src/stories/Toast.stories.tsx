@@ -3,7 +3,7 @@ import { Box, Button, Toast, ToastProps } from '@jvolima-ignite-ui/react'
 import { useState } from 'react'
 
 export default {
-  title: 'Notifications/Toast',
+  title: 'Data Display/Toast',
   component: Toast,
   args: {},
   decorators: [
@@ -11,7 +11,6 @@ export default {
       const [open, setOpen] = useState(false)
 
       function handleOpenToast() {
-        setOpen(false)
         setOpen(true)
       }
 
@@ -22,7 +21,6 @@ export default {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            overflow: 'hidden',
           }}
         >
           <Button onClick={handleOpenToast}>Add to calendar</Button>
