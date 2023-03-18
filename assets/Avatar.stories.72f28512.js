@@ -1,0 +1,2 @@
+import{A as t}from"./index.02c433a3.js";import"./index.c3f56e76.js";import"./iframe.34059c96.js";import"./index.774e27ba.js";import"./jsx-runtime.e3940793.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/jvolima.png",alt:"Jo\xE3o Vitor"},argTypes:{src:{control:{type:"text"}}}},c={},m={args:{src:void 0}},e=["Primary","WithFallback"];export{c as Primary,m as WithFallback,e as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.72f28512.js.map
