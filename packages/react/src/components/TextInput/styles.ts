@@ -47,6 +47,7 @@ export const Input = styled('input', {
 
   '&:disabled': {
     cursor: 'not-allowed',
+    opacity: 0.5,
   },
 
   '&:placeholder': {
